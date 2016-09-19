@@ -1,6 +1,6 @@
 /*
  **
- ** turn : Google Maps Geo Tagging Application 
+ ** turn : Google Maps Geo Tagging Application
  **
  ** (c) Dennis Siegel, 06.2016
  **
@@ -11,12 +11,13 @@
  */
 
 var marker;
+var latitude;
+var longitude;
 
 function initMap() {
 
     var output = document.getElementById("log");
     var locInfo = document.getElementById("locInfo");
-    var latitude, longitude;
 
     navigator.geolocation.getCurrentPosition(displayMap, error);
     if (!navigator.geolocation) {
@@ -401,6 +402,37 @@ function toggleBounce() {
     }
 }
 
+/**
+ * This function will call the server to save the coordinates
+ * into an designated file
+ * @author mail@thmshhsl.de
+ * @return {void}
+ */
 function tag() {
-    console.log("tag!");
+    var lat = latitude;
+    var lng = longitude;
+    var tag = 'tag';
+    var reference = 'reference';
+    var params = [
+        'lat=' + lat,
+        '&lng=' + lng,
+        '&tag=' + tag,
+        '&reference=' + reference
+    ].join('');
+    var request = new XMLHttpRequest();
+    request.open('POST', '/backend/save.php', true);
+    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+    request.onload = function() {
+        if (this.status >= 200 && this.status < 400) {
+            // Success!
+        } else {
+            // We reached our target server, but it returned an error
+            console.log('server error', this.response);
+        }
+    };
+    request.onerror = function() {
+        console.log('there was a general error');
+    };
+    request.send(params);
+
 }

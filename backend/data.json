@@ -1,3 +1,9 @@
-{
-	"TestData": "StillTesting"
-}
+[
+    {
+        "lat": "53.0798269",
+        "lng": "8.820505899999999",
+        "tag": "tag",
+        "reference": "reference",
+        "time": 1474291477
+    }
+]

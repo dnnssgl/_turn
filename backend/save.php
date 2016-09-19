@@ -10,18 +10,15 @@
 
 	try {
 		$postData = array(
-			'lat' => $_GET['lat'],
-			'lng' => $_GET['lng'],
-			'tag' => $_GET['tag'],
-			'reference' => $_GET['reference'],
+			'lat' => $_POST['lat'],
+			'lng' => $_POST['lng'],
+			'tag' => $_POST['tag'],
+			'reference' => $_POST['reference'],
 			'time' => time()
 		);
-
+		print_r($postData);
 		$fileContent = file_get_contents($filename);
 		$arr_fileContent = json_decode($fileContent, true);
-		print_r($fileContent);
-		print_r($arr_fileContent);
-		print_r($postData);
 		array_push($arr_fileContent, $postData);
 		$jsonData = json_encode($arr_fileContent, JSON_PRETTY_PRINT);
 

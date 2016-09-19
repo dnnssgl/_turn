@@ -12,8 +12,7 @@
 		$postData = array(
 			'lat' => $_POST['lat'],
 			'lng' => $_POST['lng'],
-			'tag' => $_POST['tag'],
-			'reference' => $_POST['reference'],
+			'type' => $_POST['type'],
 			'time' => time()
 		);
 		print_r($postData);

@@ -1,9 +1,323 @@
 [
     {
-        "lat": "53.0798269",
-        "lng": "8.820505899999999",
-        "tag": "tag",
-        "reference": "reference",
-        "time": 1474291477
+        "lat": 53.100983,
+        "lng": 8.812796,
+        "type": "authority"
+    },
+    {
+        "lat": 53.100758,
+        "lng": 8.812637,
+        "type": "authority"
+    },
+    {
+        "lat": 53.098392,
+        "lng": 8.817197,
+        "type": "authority"
+    },
+    {
+        "lat": 53.098328,
+        "lng": 8.817246,
+        "type": "authority"
+    },
+    {
+        "lat": 53.098289,
+        "lng": 8.817239,
+        "type": "authority"
+    },
+    {
+        "lat": 53.097717,
+        "lng": 8.816763,
+        "type": "authority"
+    },
+    {
+        "lat": 53.09724,
+        "lng": 8.81662,
+        "type": "authority"
+    },
+    {
+        "lat": 53.097244,
+        "lng": 8.816624,
+        "type": "authority"
+    },
+    {
+        "lat": 53.097237,
+        "lng": 8.816605,
+        "type": "authority"
+    },
+    {
+        "lat": 53.097233,
+        "lng": 8.816615,
+        "type": "authority"
+    },
+    {
+        "lat": 53.097225,
+        "lng": 8.816624,
+        "type": "authority"
+    },
+    {
+        "lat": 53.095222,
+        "lng": 8.822699,
+        "type": "authority"
+    },
+    {
+        "lat": 53.088516,
+        "lng": 8.842602,
+        "type": "authority"
+    },
+    {
+        "lat": 53.082565,
+        "lng": 8.85348,
+        "type": "authority"
+    },
+    {
+        "lat": 53.081116,
+        "lng": 8.854983,
+        "type": "authority"
+    },
+    {
+        "lat": 53.072895,
+        "lng": 8.856835,
+        "type": "authority"
+    },
+    {
+        "lat": 53.065289,
+        "lng": 8.85354,
+        "type": "authority"
+    },
+    {
+        "lat": 53.065235,
+        "lng": 8.853518,
+        "type": "authority"
+    },
+    {
+        "lat": 53.047466,
+        "lng": 8.846253,
+        "type": "authority"
+    },
+    {
+        "lat": 53.045418,
+        "lng": 8.842974,
+        "type": "authority"
+    },
+    {
+        "lat": 53.04554,
+        "lng": 8.843079,
+        "type": "authority"
+    },
+    {
+        "lat": 53.045547,
+        "lng": 8.843081,
+        "type": "authority"
+    },
+    {
+        "lat": 53.045971,
+        "lng": 8.843265,
+        "type": "authority"
+    },
+    {
+        "lat": 53.045971,
+        "lng": 8.843265,
+        "type": "authority"
+    },
+    {
+        "lat": 53.045971,
+        "lng": 8.843265,
+        "type": "authority"
+    },
+    {
+        "lat": 53.045971,
+        "lng": 8.843265,
+        "type": "authority"
+    },
+    {
+        "lat": 53.045971,
+        "lng": 8.843265,
+        "type": "authority"
+    },
+    {
+        "lat": 53.045971,
+        "lng": 8.843265,
+        "type": "authority"
+    },
+    {
+        "lat": 53.045971,
+        "lng": 8.843265,
+        "type": "authority"
+    },
+    {
+        "lat": 53.045769,
+        "lng": 8.84453,
+        "type": "authority"
+    },
+    {
+        "lat": 53.045689,
+        "lng": 8.845106,
+        "type": "authority"
+    },
+    {
+        "lat": 53.045689,
+        "lng": 8.845116,
+        "type": "authority"
+    },
+    {
+        "lat": 53.047245,
+        "lng": 8.846125,
+        "type": "authority"
+    },
+    {
+        "lat": 53.048168,
+        "lng": 8.846907,
+        "type": "authority"
+    },
+    {
+        "lat": 53.064655,
+        "lng": 8.853665,
+        "type": "authority"
+    },
+    {
+        "lat": 53.064728,
+        "lng": 8.853714,
+        "type": "authority"
+    },
+    {
+        "lat": 53.066944,
+        "lng": 8.854713,
+        "type": "authority"
+    },
+    {
+        "lat": 53.070305,
+        "lng": 8.856356,
+        "type": "authority"
+    },
+    {
+        "lat": 53.071171,
+        "lng": 8.856645,
+        "type": "authority"
+    },
+    {
+        "lat": 53.072529,
+        "lng": 8.857116,
+        "type": "authority"
+    },
+    {
+        "lat": 53.07655,
+        "lng": 8.855042,
+        "type": "authority"
+    },
+    {
+        "lat": 53.100906,
+        "lng": 8.812778,
+        "type": "authority"
+    },
+    {
+        "lat": 53.100914,
+        "lng": 8.812786,
+        "type": "authority"
+    },
+    {
+        "lat": 53.100914,
+        "lng": 8.812975,
+        "type": "authority"
+    },
+    {
+        "lat": 53.100937,
+        "lng": 8.813172,
+        "type": "authority"
+    },
+    {
+        "lat": 53.100937,
+        "lng": 8.813267,
+        "type": "authority"
+    },
+    {
+        "lat": 53.100929,
+        "lng": 8.813064,
+        "type": "authority"
+    },
+    {
+        "lat": 53.100956,
+        "lng": 8.81314,
+        "type": "authority"
+    },
+    {
+        "lat": 53.100891,
+        "lng": 8.813365,
+        "type": "authority"
+    },
+    {
+        "lat": 53.100876,
+        "lng": 8.813347,
+        "type": "authority"
+    },
+    {
+        "lat": 53.100945,
+        "lng": 8.813202,
+        "type": "authority"
+    },
+    {
+        "lat": 53.101032,
+        "lng": 8.813095,
+        "type": "authority"
+    },
+    {
+        "lat": 53.100773,
+        "lng": 8.812794,
+        "type": "authority"
+    },
+    {
+        "lat": 53.103184,
+        "lng": 8.79453,
+        "type": "authority"
+    },
+    {
+        "lat": 53.102535,
+        "lng": 8.785535,
+        "type": "authority"
+    },
+    {
+        "lat": 53.101109,
+        "lng": 8.782074,
+        "type": "authority"
+    },
+    {
+        "lat": 53.099514,
+        "lng": 8.778361,
+        "type": "authority"
+    },
+    {
+        "lat": 53.09874,
+        "lng": 8.776405,
+        "type": "authority"
+    },
+    {
+        "lat": 53.097935,
+        "lng": 8.768972,
+        "type": "authority"
+    },
+    {
+        "lat": 53.093914,
+        "lng": 8.771007,
+        "type": "authority"
+    },
+    {
+        "lat": 53.093426,
+        "lng": 8.770295,
+        "type": "authority"
+    },
+    {
+        "lat": 53.088337,
+        "lng": 8.783664,
+        "type": "authority"
+    },
+    {
+        "lat": 53.102192,
+        "lng": 8.784939,
+        "type": "authority"
+    },
+    {
+        "lat": "53.0798256",
+        "lng": "8.8205236",
+        "type": "user",
+        "time": 1474298613
     }
 ]

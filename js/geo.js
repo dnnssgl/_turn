@@ -31,15 +31,15 @@ function initMap() {
 
         latitude = position.coords.latitude;
         longitude = position.coords.longitude;
-        $(document.getElementById("tag")).removeClass("btn-danger").addClass("btn-success");
+        $(document.getElementById("report")).removeClass("disabled");
 
         // write location inte to dom
-        locInfo.innerHTML = latitude + ',' + longitude;
-        output.innerHTML = '';
+        // locInfo.innerHTML = latitude + ',' + longitude;
+        // output.innerHTML = '';
 
         // initialize map
         map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
+            zoom: 17,
             center: { lat: latitude, lng: longitude },
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             styles: dennis.map.styles
@@ -68,7 +68,7 @@ function initMap() {
     };
 
     function error() {
-        $(document.getElementById("tag")).removeClass("btn-success").addClass("disabled");
+        $(document.getElementById("report")).addClass("disabled");
         output.innerHTML = "Unable to retrieve your location";
     };
 
@@ -115,7 +115,7 @@ function addTagsToMap(tags) {
  * @author mail@thmshhsl.de
  * @return {void}
  */
-function tag() {
+function report() {
     var lat = latitude;
     var lng = longitude;
     var type = 'user';

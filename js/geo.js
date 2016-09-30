@@ -31,11 +31,11 @@ function initMap() {
 
         latitude = position.coords.latitude;
         longitude = position.coords.longitude;
-        $(document.getElementById("report")).removeClass("disabled");
+        $(document.getElementById("reportButton")).removeClass("disabled");
 
         // write location inte to dom
-        // locInfo.innerHTML = latitude + ',' + longitude;
-        // output.innerHTML = '';
+        locInfo.innerHTML = latitude + ', <br>' + longitude;
+        // output.innerHTML = '1';
 
         // initialize map
         map = new google.maps.Map(document.getElementById('map'), {
@@ -68,7 +68,7 @@ function initMap() {
     };
 
     function error() {
-        $(document.getElementById("report")).addClass("disabled");
+        $(document.getElementById("reportButton")).addClass("disabled");
         output.innerHTML = "Unable to retrieve your location";
     };
 
@@ -111,7 +111,7 @@ function addTagsToMap(tags) {
 
 /**
  * This function will call the server to save the coordinates
- * into an designated file
+ * into a designated file
  * @author mail@thmshhsl.de
  * @return {void}
  */
@@ -142,4 +142,25 @@ function report() {
     request.send(params);
 }
 
+/**
+*   this functions opens a dialog
+*   (c) Dennis Siegel
+*/
+function dialog() {
+    $(".header").addClass('hide');
+    $(".dialog--main").addClass('hide');
+    $(".dialog--submit").removeClass('hide');
+}
+
+function cancel() {
+    $(".header").removeClass('hide');
+    $(".dialog--main").removeClass('hide');
+    $(".dialog--submit").addClass('hide');
+}
+
+function submit() {
+    $(".header").removeClass('hide');
+    $(".dialog--main").removeClass('hide');
+    $(".dialog--submit").addClass('hide');
+}
 

@@ -52,11 +52,11 @@
 </head>
 
 <body>
-    <ul class="[ flex-container ]">
-        <li class="[ flex-item ]  [ header ]">
+    <div class="[ flex-container ]">
+        <div class="[ flex-item ]  [ header ]">
             <h1 class="[ text-center ]">turn</h1>
-        </li>
-        <li class="[ flex-item ]  [ main ]">
+        </div>
+        <div class="[ flex-item ] [ main ]">
             <div class="map-container">
                 <div id="map"></div>
             </div>
@@ -66,19 +66,32 @@
                 <span class="[ lead ]" id="log"></span>
             </div>
             -->
-        </li>
-        <li class="[ flex-item ]  [ footer ]">
-            <div class="[ container text-center ]">
-                <!-- DEBUGGING 
-                <p class="[ lead ]" id="_locInfo"></p>
-                -->
-                <p class="[ lead ]  [ text-center ]">
-                    <button type="report" class="[ btn btn-lg btn-report ]" id="report" onclick="report()">report location
-                    </button>
-                </p>
+        </div>
+
+        <div class="[ flex-container ] [ dialog dialog--main ]">
+            <p class="[ lead ] [ text-center ]">
+                <button type="report" class="[ btn btn-lg btn-report ]" id="reportButton" onclick="dialog()">report location
+                </button>
+            </p>
+        </div>
+
+        <div class="[ flex-container ] hide [ dialog dialog--submit ]">
+            <div class="[ col-xs-12 ] [ info ]">
+                <span>your location</span>
+                <p class="[ locInfo ]" id="locInfo"></p>
             </div>
-        </li>
-    </ul>
+            <div class="[ flex--row ] [ actions ]">
+                <div class="[ flex-item ]">
+                    <button type="report" class="[ btn btn-lg btn-cancel ]" id="cancelButton" onclick="cancel()">cancel
+                    </button>
+                </div>
+                <div class="[ flex-item ]">
+                    <button type="report" class="[ btn btn-lg btn-submit ]" id="reportButton" onclick="submit()">submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/lodash.min.js"></script>
@@ -86,7 +99,7 @@
     <script src="js/geo.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="dist/js/bootstrap.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
 </body>
 
 </html>

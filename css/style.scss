@@ -1,6 +1,6 @@
 // sizes
-$header-height:         20%;
-$main-height:           60%;
+$header-height:         10%;
+$main-height:           70%;
 $footer-height:         20%;
 // units
 $spacing-unit:          12px;
@@ -52,11 +52,12 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 1rem;
 }
 
 h1 {
     font-family: 'Slabo 27px', serif;
-    font-size: 2em;
+    font-size: 3em;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -78,8 +79,16 @@ h1 {
     padding: 5px;
     margin-top: 0;
     font-weight: bold;
-    font-size: 3em;
+    //font-size: 3em;
     text-align: center;
+}
+
+.flex--row {
+    flex-direction: row;
+}
+
+.flex--column {
+    flex-direction: column;
 }
 
 .header {
@@ -88,14 +97,7 @@ h1 {
     justify-content: center;
     flex-basis: $header-height;
     height: $header-height;
-}
-
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-basis: $footer-height;
-    height: $footer-height;
+    transition: $transition;
 }
 
 .main {
@@ -106,6 +108,9 @@ h1 {
 
 .lead {
     margin-bottom: 0;
+}
+.row {
+    font-size: 1em;
 }
 
 .map-container {
@@ -133,5 +138,83 @@ h1 {
             border-color: $color-white;
             background-color: $color-white;
         }
+    }
+    &.btn-cancel {
+        font-weight: 300;
+        font-size: 1.5em;
+        border-color: $color-red;
+        background-color: $color-dark-blue;
+        color: $color-red;
+        padding: 15px 45px;
+        &:hover {
+            color: $color-dark-blue;
+            border-color: $color-red;
+            background-color: $color-red;
+        }
+    }
+    &.btn-submit {
+        font-weight: 300;
+        font-size: 1.5em;
+        border-color: $color-light-blue;
+        background-color: $color-dark-blue;
+        color: $color-light-blue;
+        padding: 15px 45px;
+        &:hover {
+            color: $color-dark-blue;
+            border-color: $color-light-blue;
+            background-color: $color-light-blue;
+        }
+    }
+}
+
+.dialog {
+    &.dialog--main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: $footer-height;
+        height: $footer-height;
+    }
+
+    &.dialog--submit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-basis: $footer-height + $header-height;
+        width: 100%;
+        height: $footer-height + $header-height;
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-grow: 2;
+    width: 100%;
+
+    span {
+        font-weight: 300;
+        font-size: 1.5em;
+    }
+    .locInfo {
+        font-weight: 400;
+        font-size: 2em;
+        text-align: center;
+    }
+}
+.actions {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: $spacing-unit;
+
+    .flex-item {
+        align-self: flex-start;
     }
 }
